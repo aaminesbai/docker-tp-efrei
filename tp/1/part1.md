@@ -68,12 +68,12 @@ Bon trève de blabla, on va lancer un truc qui juste marche.
 
 On va lancer une petite API codée en Python par mes ptites mimines.
 
-🌞 **Lancer un conteneur [`meow_api`](https://hub.docker.com/r/it4lik/meow-api)**
+🌞 **Lancer un conteneur [`meow-api`](https://hub.docker.com/r/it4lik/meow-api)**
 
 - avec la commande suivante :
 
 ```bash
-docker run -p 8000:8000 it4lik/meow_api
+docker run -p 8000:8000 it4lik/meow-api
 ```
 
 > Si tu mets pas le `-d` tu vas perdre la main dans ton terminal, et tu auras les logs du conteneur directement dans le terminal. `-d` comme *daemon* : pour lancer en tâche de fond. Essaie pour voir !
