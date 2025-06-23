@@ -19,7 +19,7 @@ Ce dossier contient mes réponses aux trois parties du TP1.
    docker logs <id>
    docker inspect <id>
    ```
-4. **Mode d\u00E9tach\u00E9 et logs**
+4. **Mode détaché et logs**
    ```bash
    docker run -d -p 8000:8000 it4lik/meow-api
    docker logs <id>
@@ -39,7 +39,7 @@ Ce dossier contient mes réponses aux trois parties du TP1.
 
 ## Part II : Images
 
-1. **R\u00E9cup\u00E9ration d'images**
+1. **Récupération d'images**
    ```bash
    docker pull python:3.11
    docker pull mysql:8.0.42
