@@ -137,7 +137,7 @@ Si elle ne l'est pas, il écoute sur le port `8000` par défaut.
 
 - ajoutez une option sur le `docker run` pour lancer l'image `it4lik/meow-api` en définissant une variable d'environnement
 - doit définir la variable d'environnement mentionnée plus haut
-- écoutez sur le port `7000`
+- écoutez sur le port `16789` 
 
 🌞 **Mettez à jour l'option `-p`**
 
