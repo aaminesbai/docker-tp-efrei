@@ -3,6 +3,7 @@
 # Index
 
 - [**TP1** : Docker ez oupa](./1/README.md)
+- [**TP2** : Construction avancée d'images](./2/README.md)
 
 # Le mood
 
