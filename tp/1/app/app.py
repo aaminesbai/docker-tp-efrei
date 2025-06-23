@@ -53,5 +53,5 @@ def get_user(user_id):
         abort(404, description="This user doe snot exist mate.")
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=LISTEN_PORT)
+    app.run(debug=False, host='0.0.0.0', port=LISTEN_PORT)
 
