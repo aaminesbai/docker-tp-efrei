@@ -35,7 +35,7 @@ func getRandomCatHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/cat", getRandomCatHandler)
 	log.Println("I'm listening on TCP port 8080")
-	color.Green("Server active !")
+	color.Green("Server active ! Hit me on /cat")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		log.Fatal(err)
 	}
