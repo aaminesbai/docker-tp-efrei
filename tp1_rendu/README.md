@@ -28,11 +28,13 @@ Ce dossier contient mes réponses aux trois parties du TP1.
    ```bash
    docker run -v $(pwd)/part1/custom_app.py:/app/app.py -p 8000:8000 it4lik/meow-api
    curl http://localhost:8000/
+    # Hello from custom app!
    ```
 6. **Variable d'environnement**
    ```bash
    docker run -d -e LISTEN_PORT=16789 -p 16789:16789 it4lik/meow-api
    curl http://localhost:16789/
+    # {"message":"Available routes","routes":{"list_all_users":"http://localhost:16789/users","get_user_by_id":"http://localhost:16789/user/1"}}
    ```
 
 ## Part II : Images
@@ -92,6 +94,11 @@ Ce dossier contient mes réponses aux trois parties du TP1.
    ```bash
    cd meow_compose
    docker compose up --build -d
+    # Starting db...
+    # Starting meow-api...
+
    curl http://localhost:${LISTEN_PORT}/users
+    # [{"id":1,"name":"Alice","favorite_insult":"you fool"}, {"id":2,"name":"Bob","favorite_insult":"clown"}, {"id":3,"name":"Charlie","favorite_insult":"dummy"}, {"id":4,"name":"Diana","favorite_insult":"nerd"}, {"id":5,"name":"Eve","favorite_insult":"baka"}]
    curl http://localhost:${LISTEN_PORT}/user/3
+    # {"id":3,"name":"Charlie","favorite_insult":"dummy"}
    ```
