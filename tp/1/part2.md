@@ -23,7 +23,7 @@ Y'a juste à avoir Docker installé, on run l'image, et ça tourne ! **No dépen
 - avec la commande `docker pull`
 - récupérez :
   - l'image `python` officielle en version 3.11 (`python:3.11` pour la dernière version)
-  - l'image `mysql` officielle en version 5.7
+  - l'image `mysql` officielle en version 8.0.42
   - l'image `wordpress` officielle en dernière version
     - c'est le tag `:latest` pour récupérer la dernière version
     - si aucun tag n'est précisé, `:latest` est automatiquement ajouté
