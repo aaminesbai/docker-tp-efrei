@@ -6,6 +6,7 @@ import (
 	"math/rand"
 	"net/http"
 	"time"
+	"github.com/fatih/color"
 )
 
 var cats = []string{
@@ -34,6 +35,7 @@ func getRandomCatHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/cat", getRandomCatHandler)
 	log.Println("I'm listening on TCP port 8080")
+	color.Green("Server active !")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		log.Fatal(err)
 	}
