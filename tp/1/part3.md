@@ -135,7 +135,7 @@ Ajoutez un script `seed.sql` à côté du `docker-compose.yml`, il doit être ut
 
 Vraiment pratique pour filer juste un dépôt git avec un `docker-compose.yml` qui fait tout !
 
-➜ Ajoutez le `Dockerfile` de la `meow-api` dans le dossier
+➜ Ajoutez le `Dockerfile` de la `meow-api` dans le dossier. Oui vous avez peut-être déjà le `Dockerfile` stocké dans votre dépôt, l'idée ici c'est d'avoir une structure un peu standard avec un dossier qui est autonome et contient tout le nécessaire.
 
 L'image `meow-api` doit être automatiquement build quand on allume le bazar.
 
