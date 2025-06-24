@@ -4,6 +4,8 @@ Dans ce TP2 on va aborder plusieurs notions autour des *images* de conteneurisat
 
 Le but de ce TP est donc de voir comment construire de **meilleures images**.
 
+![syntax](./img/dockerfile.jpg)
+
 **C koa "meilleures" ?** TRES BONNE QUESTION :
 
 - **la perf**

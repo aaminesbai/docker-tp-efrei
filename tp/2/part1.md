@@ -69,11 +69,15 @@ Le but : on a juste à `docker compose up` pour lancer votre projet : aucune dé
     └── main.py        # évidemment un autre nom suivant votre langage
 ```
 
+![Wait](./img/waiting.jpg)
+
 ## 2. Test
 
 🌞 **Test !**
 
 - un `docker compose up` dans le compte-rendu
+  - il build à la volée votre image
+  - ajoutez `--build` si nécessaire
 - suivi d'un `curl` qui prouve que le service fonctionne
 
 ---

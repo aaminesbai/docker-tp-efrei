@@ -91,6 +91,8 @@ Measure-Command { docker build ... }
   - ça serait bien de timer combien de temps prend l'app à démarrer, à fonctionner, à traiter une requête un peu lourde, ce genre de truc
   - le but est de mettre en évidence (ou pas) la lenteur de `alpine`
 
+![Perfs](./img/high_perf.jpg)
+
 ## 3. Choose yourself !
 
 ➜ **Choisissez ce que vous préférez pour continuer le TP**

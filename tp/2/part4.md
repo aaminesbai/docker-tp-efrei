@@ -17,6 +17,8 @@ Quelques derniers axes d'améliorations en vrac, qui avaient pas leur place dans
 
 > C'est l'heure pour notre image de faire une sèche.
 
+![Smol image](./img/smol_image.jpg)
+
 A chaque fois qu'on télécharge un truc avec un outil dédié (comme les gestionnaires de paquets `apt`, `dnf`, `apk`, `pacman`, etc.), y'a généralement du *cache* qui est créé quelque part, ou des fichiers d'index, ce genre de trucs.
 
 **Des choses donc qui ne sont pas utiles au moment où on run notre application** (le *runtime*).
