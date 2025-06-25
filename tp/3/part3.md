@@ -15,7 +15,6 @@ Dans le TP, on va réutiliser votre ~~magnifique~~ compte Azure pour pop une VM 
   - [1. Prepare Azure VM](#1-prepare-azure-vm)
   - [2. Manual deploy](#2-manual-deploy)
   - [3. Auto-deploy](#3-auto-deploy)
-  - [La suiiite](#la-suiiite)
 
 ## 1. Prepare Azure VM
 
@@ -78,15 +77,12 @@ ssh deploy@IP_PUBLIQUE_VM_AZURE docker run NOM_DE_LIMAGE
 - il doit comporter un *stage* `deploy`
   - le *job* se connecte à la machine Azure en SSH
   - clone votre dépôt git
-  - lance votre app avec `docker-compose.yml` dans sa nouvelle version (il faut ptet couper/relancer)
+  - lance votre app en utilisant votre `docker-compose.yml` dans la dernière version
+
+> Il faudra ptet `git pull` à chaque fois pour récup la dernière version. Puis mettre à jour (couper/relancer) les conteneurs s'ils tournent déjà.
 
 🌞 **Vérifiez que ça a été correctement déployé !**
 
 - mettez moi un `curl IP_PUBLIQUE_VM_AZURE` dans le compte-rendu
 
 ![Continuously](./img/deliver_continuously.png)
-
-## La suiiite
-
-👉 On continue à approfondir le sujet, et on va aborder le terme [***shift left* dans la quatrième partie.**](./part4.md)
-

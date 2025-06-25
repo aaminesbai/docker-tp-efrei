@@ -18,9 +18,12 @@ Si les tests sont validés, on déclenche un **build automatique du code**. Ici,
     - [A. Intro](#a-intro)
     - [B. Lint me baby](#b-lint-me-baby)
     - [C. Format me baby](#c-format-me-baby)
-  - [2. Building](#2-building)
-  - [3. Publishing](#3-publishing)
-  - [4. Some manual tests](#4-some-manual-tests)
+  - [2. Secret scanning](#2-secret-scanning)
+    - [A. Intro](#a-intro-1)
+    - [B. Find a tool](#b-find-a-tool)
+  - [3. Building](#3-building)
+  - [4. Publishing](#4-publishing)
+  - [5. Some manual tests](#5-some-manual-tests)
   - [Next next next](#next-next-next)
 
 ## 1. Linting
