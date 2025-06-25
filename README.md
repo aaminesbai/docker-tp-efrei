@@ -7,6 +7,8 @@ Vous trouverez le TP1 ci-joint:
 # [TP](./tp/README.md)
 
 - [**TP1** : Docker ez oupa](./tp/1/README.md)
+- [**TP2** : Construction avancée d'images](./tp/2/README.md)
+- [**TP3** : Docker et CI/CD](./tp/3/README.md)
 
 # Mémos
 
