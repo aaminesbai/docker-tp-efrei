@@ -1,9 +1,0 @@
-stages:
-  - meo
-
-
-test:
-  stage: meo
-  script:
-    - echo $meo
-    - cat $meo
