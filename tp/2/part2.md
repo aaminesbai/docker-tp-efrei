@@ -143,7 +143,7 @@ Toujours dans le même (ou pas) on pourra indiquer la suite des étapes pour `pr
 ```Dockerfile
 ## D'abord tout ce qui est commun dans le premier "stage"
 # Image de base commune
-FROM debian
+FROM debian as base
 
 # Workdir commun
 WORKDIR /app
