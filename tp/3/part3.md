@@ -85,4 +85,6 @@ ssh deploy@IP_PUBLIQUE_VM_AZURE docker run NOM_DE_LIMAGE
 
 - mettez moi un `curl IP_PUBLIQUE_VM_AZURE` dans le compte-rendu
 
+> Il faudra ouvrir un port dans le firewall de Azure pour que ça fonctrionne, sinon il ne laisse pas entrer le trafic sur un autre port que 22 par défaut !
+
 ![Continuously](./img/deliver_continuously.png)
