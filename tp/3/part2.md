@@ -93,9 +93,32 @@ Bon on va pas se taper toutes les erreurs de *lint* à la main hein.
 
 ![Before After CI](./img/gandalf_cicd.png)
 
-## 2. Building
+## 2. Secret scanning
 
-Okayyyy donc on a notre premier vrai test sur le code. On passe à l'étape suivante qu'on retrouve dans toute *pipeline CI/CD* digne de ce nom : le build automatisé !
+### A. Intro
+
+Déployer des applications automatiquement c'est bien, mais la gestion des secrets c'est un beau bordel. Genre entre le `.env` et le `.gitlab-ci.yml` étou, y'en a partout : des clés SSH privées, des passwords, des clés d'APIs, des URLs de webhook, etc.
+
+Si t'as pas envie d'être ce mec quoi :
+
+![That guy](./img/that_guy.png)
+
+> Il est notoire que GitHub est le meilleur endroit pour trouver des passwords ou clé d'API en tout genre. Tu veux une offre chatGPT premium ? Go chercher sur GitHub le nom de la variable ;D
+
+### B. Find a tool
+
+➜ **Choisissez un tool qui cherche des secrets dans un dépôt de code**
+
+- ça peut être un ptit tool autonome que vous trouvez sur l'internet
+- Gitlab a aussi des features autour de ça
+
+🌞 **Modifiez le `.gitlab-ci.yml` de votre dépôt git**
+
+- il doit intégrer de la détection de secrets automatisée
+
+## 3. Building
+
+Okayyyy donc on a nos premiers vrais test sur le code. On passe à l'étape suivante qu'on retrouve dans toute *pipeline CI/CD* digne de ce nom : le build automatisé !
 
 On va donc ajouter un *stage* `build` à notre fichier  `gitlab-ci.yml` qui déclenche un `docker build` automatiquement.
 
@@ -111,7 +134,7 @@ On va donc ajouter un *stage* `build` à notre fichier  `gitlab-ci.yml` qui déc
 
 ➜ **HINT :** n'hésitez pas à commenter des jobs dans votre `.gitlab-ci.yml` pour éviter d'attendre la full pipeline à chaque fois. [On peut aussi "cacher" le job, en le préfixant par un `.`.](https://docs.gitlab.com/ci/jobs/#hide-jobs)
 
-## 3. Publishing
+## 4. Publishing
 
 Okay c'est cool de build, mais ça serait bien que ça serve à quelque chose et pas juste pour le plaisir de build un machin :d
 
@@ -139,7 +162,7 @@ Documentez-vous, vous trouverez plein d'exemples tout prêts tout chauds sur int
 - rendez-vous sur la page principale de votre dépôt
 - dans le menu latéral : `Deploy > Container Registry`
 
-## 4. Some manual tests
+## 5. Some manual tests
 
 Maintenant que l'image est publiée sur le registre Gitlab, elle est récupérable depuis n'importe quelle machine qui a un accès internet.
 
